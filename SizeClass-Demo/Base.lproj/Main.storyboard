@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1An-uq-AHi">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--SizeClass-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gKT-8I-NdK"/>
+                        <viewControllerLayoutGuide type="bottom" id="eLh-Ze-XSY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QQ" translatesAutoresizingMaskIntoConstraints="NO" id="rEx-Cd-Gak">
+                                <rect key="frame" x="10" y="245.5" width="580" height="362.5"/>
+                                <color key="backgroundColor" red="1" green="0.30588235289999999" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rEx-Cd-Gak" secondAttribute="height" multiplier="8:5" id="1pq-JK-OmG"/>
+                                    <constraint firstAttribute="width" secondItem="rEx-Cd-Gak" secondAttribute="height" multiplier="1:1" id="PwV-E6-OrT"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="1pq-JK-OmG"/>
+                                        <exclude reference="PwV-E6-OrT"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="PwV-E6-OrT"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="1pq-JK-OmG"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="一将功成万骨枯" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="RTu-mt-ktR">
+                                <rect key="frame" x="10" y="84" width="580" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="u2h-8M-pN9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="u2h-8M-pN9"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="u2h-8M-pN9"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1M-kz-be4">
+                                <rect key="frame" x="10" y="134" width="580" height="81.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">跟踪类型，是一个枚举：MKUserTrackingModeNone :不进行用户位置跟踪；MKUserTrackingModeFollow :跟踪用户位置；MKUserTrackingModeFollowWithHeading :跟踪用户位置并且跟踪用户前进方向；</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="RTu-mt-ktR" secondAttribute="trailing" constant="10" id="0ij-JP-Yjf"/>
+                            <constraint firstItem="rEx-Cd-Gak" firstAttribute="top" secondItem="b1M-kz-be4" secondAttribute="bottom" constant="30" id="EMC-dU-iri"/>
+                            <constraint firstItem="RTu-mt-ktR" firstAttribute="top" secondItem="gKT-8I-NdK" secondAttribute="bottom" constant="20" id="JLs-Yt-Iml"/>
+                            <constraint firstItem="b1M-kz-be4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="Onf-mj-zCB"/>
+                            <constraint firstItem="RTu-mt-ktR" firstAttribute="top" secondItem="gKT-8I-NdK" secondAttribute="bottom" constant="20" id="P62-FU-Iw0"/>
+                            <constraint firstAttribute="trailing" secondItem="rEx-Cd-Gak" secondAttribute="trailing" constant="10" id="Swi-0F-Bu1"/>
+                            <constraint firstItem="eLh-Ze-XSY" firstAttribute="top" secondItem="rEx-Cd-Gak" secondAttribute="bottom" constant="129.5" id="adg-Gf-oiH">
+                                <variation key="heightClass=compact-widthClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="b1M-kz-be4" firstAttribute="leading" secondItem="rEx-Cd-Gak" secondAttribute="trailing" constant="51" id="bGh-mw-scw">
+                                <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="eLh-Ze-XSY" firstAttribute="top" relation="lessThanOrEqual" secondItem="b1M-kz-be4" secondAttribute="bottom" constant="225.5" id="g5R-Gl-waL">
+                                <variation key="heightClass=compact-widthClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="b1M-kz-be4" secondAttribute="trailing" constant="10" id="hoj-CO-KAW"/>
+                            <constraint firstItem="RTu-mt-ktR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="qkT-kD-FXs"/>
+                            <constraint firstItem="rEx-Cd-Gak" firstAttribute="top" secondItem="gKT-8I-NdK" secondAttribute="bottom" constant="20" id="sI8-1b-Nla"/>
+                            <constraint firstItem="rEx-Cd-Gak" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="u19-2y-Yhs"/>
+                            <constraint firstItem="RTu-mt-ktR" firstAttribute="leading" secondItem="rEx-Cd-Gak" secondAttribute="trailing" constant="23" id="yah-8r-OAG">
+                                <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="b1M-kz-be4" firstAttribute="top" secondItem="RTu-mt-ktR" secondAttribute="bottom" constant="20" id="zhr-0L-s2a"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="JLs-Yt-Iml"/>
+                                <exclude reference="P62-FU-Iw0"/>
+                                <exclude reference="qkT-kD-FXs"/>
+                                <exclude reference="yah-8r-OAG"/>
+                                <exclude reference="Onf-mj-zCB"/>
+                                <exclude reference="bGh-mw-scw"/>
+                                <exclude reference="EMC-dU-iri"/>
+                                <exclude reference="Swi-0F-Bu1"/>
+                                <exclude reference="sI8-1b-Nla"/>
+                                <exclude reference="adg-Gf-oiH"/>
+                                <exclude reference="g5R-Gl-waL"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="JLs-Yt-Iml"/>
+                                <include reference="yah-8r-OAG"/>
+                                <include reference="bGh-mw-scw"/>
+                                <include reference="sI8-1b-Nla"/>
+                                <include reference="adg-Gf-oiH"/>
+                                <exclude reference="g5R-Gl-waL"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="P62-FU-Iw0"/>
+                                <include reference="qkT-kD-FXs"/>
+                                <include reference="Onf-mj-zCB"/>
+                                <include reference="EMC-dU-iri"/>
+                                <include reference="Swi-0F-Bu1"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="SizeClass" id="QWt-yM-mS1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1101" y="42"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wbY-MP-3Gy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1An-uq-AHi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PMo-G0-8rl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="ZfV-8F-TEM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="03e-5J-t1S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="366" y="42"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="QQ" width="1399" height="820"/>
+    </resources>
+</document>
