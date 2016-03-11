@@ -14,21 +14,21 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    
-    /**
-     *  http://blog.csdn.net/yongyinmg/article/details/39315829
-     *
-     */
-    
-    
+- (void)viewDidLoad
+{
+	[super viewDidLoad];
+	// Do any additional setup after loading the view, typically from a nib.
+
+	/**
+	 *  初探iOS8中的SizeClass：
+     *  http://blog.callmewhy.com/2014/09/12/learn-ios8-size-class/
+	 */
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)didReceiveMemoryWarning
+{
+	[super didReceiveMemoryWarning];
+	// Dispose of any resources that can be recreated.
 }
 
 @end

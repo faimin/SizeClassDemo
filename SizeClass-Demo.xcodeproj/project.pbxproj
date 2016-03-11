@@ -14,6 +14,7 @@
 		18BB298A1A42793E005C76FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18BB29891A42793E005C76FE /* Images.xcassets */; };
 		18BB298D1A42793E005C76FE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BB298B1A42793E005C76FE /* LaunchScreen.xib */; };
 		18BB29991A427944005C76FE /* SizeClass_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BB29981A427944005C76FE /* SizeClass_DemoTests.m */; };
+		BC75FE141C926D2600C915E0 /* ZDMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC75FE131C926D2600C915E0 /* ZDMainNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		18BB29921A427943005C76FE /* SizeClass-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SizeClass-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BB29971A427944005C76FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18BB29981A427944005C76FE /* SizeClass_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SizeClass_DemoTests.m; sourceTree = "<group>"; };
+		BC75FE121C926D2600C915E0 /* ZDMainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDMainNavigationController.h; sourceTree = "<group>"; };
+		BC75FE131C926D2600C915E0 /* ZDMainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDMainNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 			children = (
 				18BB29801A42793D005C76FE /* AppDelegate.h */,
 				18BB29811A42793D005C76FE /* AppDelegate.m */,
+				BC75FE121C926D2600C915E0 /* ZDMainNavigationController.h */,
+				BC75FE131C926D2600C915E0 /* ZDMainNavigationController.m */,
 				18BB29831A42793D005C76FE /* ViewController.h */,
 				18BB29841A42793D005C76FE /* ViewController.m */,
 				18BB29861A42793E005C76FE /* Main.storyboard */,
@@ -221,6 +226,7 @@
 			files = (
 				18BB29851A42793D005C76FE /* ViewController.m in Sources */,
 				18BB29821A42793D005C76FE /* AppDelegate.m in Sources */,
+				BC75FE141C926D2600C915E0 /* ZDMainNavigationController.m in Sources */,
 				18BB297F1A42793D005C76FE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,7 +352,7 @@
 				INFOPLIST_FILE = "SizeClass-Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -357,7 +363,7 @@
 				INFOPLIST_FILE = "SizeClass-Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
